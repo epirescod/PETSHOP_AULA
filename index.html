@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Pet</title>
+</head>
+<body>
+    <h1>Cadastro de Pet</h1>
+    <form action="gravarPet.php" method="post" enctype="multipart/form-data">
+        nome:
+        <input type="text" name="nome" maxlength="30" placeholder="do pet"> <br>
+        idade:
+        <input type="number" name="idade"> <br>
+        tipo:
+        <select name="tipo" id="">
+            <option value="">escolha</option>
+            <option value="C">Cachorro</option>
+            <option value="G">Gato</option>
+            <option value="P">Passaro</option>
+            <option value="R">Reptil</option>
+            <option value="O">Outros</option>
+        </select>
+        peso:
+        <input type="number" name="peso"> <br>
+        <input type="checkbox" name="vacinado" id="" value="1" > Vacina <br>
+        dono:
+        <input type="text" name="dono" id="" maxlength="30"> <br>
+        ultima consulta:
+        <input type="date" name="UltimaConsulta"> <br>
+        médico responsável:
+        <input type="text" name="medico" maxlength="30"> <br>
+        Observações: <br>
+        <textarea name="obs" id="" cols="80" rows="5"></textarea>
+        <hr>
+        <input type="submit" value="cadastrar pet">
+        <input type="reset" name="limpar" id="" value="limpar">
+
+
+
+    </form>
+</body>
+</html>
